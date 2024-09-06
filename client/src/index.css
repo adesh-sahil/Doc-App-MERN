@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.spinner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.427);
+}
+
+.form-btn {
+  width: 180px !important;
+  margin-top: 30px !important;
+}
+
+.pic-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+.avatar {
+  width: 50%;
+}
+
+.doctor-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.doctor-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.doctor-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.doctor-details {
+  padding: 10px;
+  flex: 1;
+}
+
+.doctor-name {
+  margin: 0;
+  color: #333;
+}
+
+.doctor-details p {
+  margin: 5px 0;
+}
+
+.doctor-details strong {
+  color: #007bff;
+}
+

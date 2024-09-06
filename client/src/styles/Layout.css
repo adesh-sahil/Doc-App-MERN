@@ -1,0 +1,166 @@
+.main {
+  padding: 5px;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.layout {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  min-height: 100%;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #272b38;
+  box-shadow: 0 0 2px gray;
+  margin-right: 20px;
+  color: white;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(0); 
+  z-index: 99;
+}
+
+.sidebar.open {
+  transform: translateX(0); 
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 25px;
+  left: 50px; 
+  z-index: 101; 
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 1.5rem;
+    color: #15171e;
+}
+
+.sidebar-toggle {
+  display: none; 
+  cursor: pointer;
+  z-index: 100;
+}
+
+.sidebar-toggle i {
+  font-size: 1.5rem;
+  color: white;
+  z-index: 99;
+}
+
+.content {
+  flex: 1;
+  margin-left: 320px; 
+  height: 100%;
+  overflow-y: auto; 
+}
+
+.header {
+  height: 10vh;
+  margin-bottom: 20px;
+  box-shadow: 0 0 2px gray;
+  background-color: white;
+}
+
+.body {
+  height: 85vh;
+  margin-bottom: 20px;
+  box-shadow: 0 0 2px gray;
+  background-color: white;
+}
+
+
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  margin-top: 50px;
+}
+
+.menu-item {
+  margin-top: 30px;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu-item i {
+  font-size: 1.2rem;
+  margin: 0 15px;
+}
+
+.active {
+  background-color: white;
+  padding: 10px;
+}
+
+.active a,
+.active i {
+  color: #272b38;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: flex-end;
+  margin: 0 15px;
+}
+
+.header-content i {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.header-content a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(48, 56, 88);
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 250px;
+    position: fixed;
+    z-index: 99;
+  }
+
+  .sidebar-header {
+    justify-content: space-between;
+  }
+
+  .sidebar-toggle {
+    display: block; 
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .content {
+    margin-left: 0; 
+  }
+}
