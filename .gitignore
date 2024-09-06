@@ -1,0 +1,20 @@
+# Ignore node_modules folders
+node_modules/
+client/node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore the build folder (if applicable)
+build/
+
+# Ignore cache files
+.cache/
+.DS_Store
+
+# Ignore coverage reports
+coverage/
